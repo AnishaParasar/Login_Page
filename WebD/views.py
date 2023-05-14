@@ -54,8 +54,3 @@ def signin(request):
 
     return render(request, "WebD/signin.html")
 
-def signout(request):
-    logout(request)
-    messages.success(request, "Logged out successfully.")
-    return redirect('home')
-
